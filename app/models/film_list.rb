@@ -13,7 +13,7 @@ class FilmList < ApplicationRecord
       f_url = "http://www.phimmoi.net/" + li.css('a')[0]["href"]
       
       x = li.css('.movie-carousel-top-item')[0]["style"].index("http")
-      y = li.css('.movie-carousel-top-item')[0]["style"].index(")") - 1
+      y = li.css('.movie-carousel-top-item')[0]["style"].index(")") - 2
       f_image = li.css('.movie-carousel-top-item')[0]["style"][x..y]
 
       f_list = FilmList.new(status: f_status, title_vi: f_title_vi, title_en: f_title_en, image: f_image, url: f_url, film_type: "de-xuat", full_type: "Phim đề xuất")
@@ -63,7 +63,8 @@ class FilmList < ApplicationRecord
           { film_type: "phim-hanh-dong", full_type: "Phim hành động" },
           { film_type: "phim-vien-tuong", full_type: "Phim viễn tưởng" },
           { film_type: "phim-phieu-luu", full_type: "Phim phiêu lưu" },
-          { film_type: "phim-hai-huoc", full_type: "Phim võ thuật" },
+          { film_type: "phim-hai-huoc", full_type: "Phim hài hước" },
+          { film_type: "phim-vo-thuat", full_type: "Phim võ thuật" },
           { film_type: "phim-kinh-di", full_type: "Phim kinh dị" },
           { film_type: "phim-hoi-hop-gay-can", full_type: "Phim gay cấn" },
           { film_type: "phim-bi-an-sieu-nhien", full_type: "Phim siêu nhiên" },
