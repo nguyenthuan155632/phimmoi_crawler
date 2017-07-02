@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  filmlist: one
+  f_title_vi: MyString
+  f_title_en: MyString
+  f_image: MyString
+  f_imdb: MyString
+  f_status: MyString
+  f_country: MyString
+  f_quality: MyString
+  f_resolution: MyString
+  f_year: MyString
+
+two:
+  filmlist: two
+  f_title_vi: MyString
+  f_title_en: MyString
+  f_image: MyString
+  f_imdb: MyString
+  f_status: MyString
+  f_country: MyString
+  f_quality: MyString
+  f_resolution: MyString
+  f_year: MyString
