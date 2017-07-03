@@ -36,6 +36,7 @@ class FilmListController < ApplicationController
     film = { film: [] }
 
     fi = [f.f_title_vi.to_s, f.f_title_en.to_s, f.f_imdb.to_s, f.f_image.to_s, f.f_status.to_s, f.f_country.to_s, f.f_score.to_s, f.f_views.to_s, f.f_year.to_s, f.f_content.to_s, f.f_trailer.to_s, f.f_see_film.to_s]
+    fi.each_with_index { |k, i| fi[i] = "NA" if k.to_s == "" }
     film[:film] = fi
 
     render json: film

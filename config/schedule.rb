@@ -21,7 +21,7 @@
 
 # whenever --update-crontab --set environment='development'
 # every 2.hours do # 1.minute 1.day 1.week 1.month 1.year is also supported
-every :day, :at => '10:42pm' do
+every :day, :at => '12:01pm' do
   runner "FilmList.crawler_film_popular"
   runner "FilmList.crawler_film_collection(1)"
   runner "FilmList.crawler_film_countries(1)"
